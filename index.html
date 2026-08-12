@@ -200,7 +200,7 @@
             color: #ffffff;
         }
 
-        /* Floating Cart Bar (Liquid Glass) */
+        /* Floating Cart Bar */
         .cart-bar {
             position: fixed;
             bottom: 25px;
@@ -282,7 +282,7 @@
             background: rgba(255,255,255,0.2);
         }
 
-        /* Real Receipt / Invoice Slip Style Modal */
+        /* Modal / Cart View */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -322,17 +322,6 @@
 
         .modal-overlay.active .receipt-slip {
             transform: scale(1);
-        }
-
-        .receipt-slip::after {
-            content: "";
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            right: 0;
-            height: 10px;
-            background: radial-gradient(circle, transparent, transparent 50%, #fcfcfc 50%, #fcfcfc 100%);
-            background-size: 16px 20px;
         }
 
         .receipt-header {
@@ -445,7 +434,7 @@
             border: none;
         }
 
-        /* Notification Toast Confirmation */
+        /* Toast Notification */
         .toast {
             position: fixed;
             top: 25px;
@@ -519,10 +508,9 @@
 </head>
 <body>
 
-    <!-- Toast Notification Confirmation -->
     <div class="toast" id="toastNotification">
         <div class="toast-dot"></div>
-        <span id="toastMessage">Item added to slip successfully!</span>
+        <span id="toastMessage">Item added to cart successfully!</span>
     </div>
 
     <header>
@@ -537,7 +525,7 @@
         
         <div class="product-grid" id="productGrid">
 
-            <!-- 1. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 1. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="488a56bf-43b5-4cdb-82b0-42dcddd6e0c1.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="eager" onerror="handleImageError(this, '488a56bf-43b5-4cdb-82b0-42dcddd6e0c1.jpg')">
@@ -548,13 +536,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 2. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 2. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="701443f5-ac79-4c55-81c6-fc0c9d5017d1.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="eager" onerror="handleImageError(this, '701443f5-ac79-4c55-81c6-fc0c9d5017d1.jpg')">
@@ -565,13 +553,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 3. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 3. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="8ba98b9b-4709-47bb-bafa-a5c80a4b8260.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="eager" onerror="handleImageError(this, '8ba98b9b-4709-47bb-bafa-a5c80a4b8260.jpg')">
@@ -582,13 +570,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 4. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 4. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="8cc94825-4a05-4680-ad7f-6329f69eda13.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '8cc94825-4a05-4680-ad7f-6329f69eda13.jpg')">
@@ -599,13 +587,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 5. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 5. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="92050ed5-8918-483e-ac6e-2594b2a5c98f.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '92050ed5-8918-483e-ac6e-2594b2a5c98f.jpg')">
@@ -616,13 +604,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 6. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 6. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="9e14091b-803f-4378-87fa-d39f7c5ca4bc.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '9e14091b-803f-4378-87fa-d39f7c5ca4bc.jpg')">
@@ -633,13 +621,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 7. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 7. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="c08743c4-805d-4bd1-8f69-fba373f40ca0.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'c08743c4-805d-4bd1-8f69-fba373f40ca0.jpg')">
@@ -650,13 +638,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 8. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 8. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="e773662a-2bb7-48ee-94f8-e7080e39fd73.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'e773662a-2bb7-48ee-94f8-e7080e39fd73.jpg')">
@@ -667,13 +655,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 9. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 9. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="e77d89fe-f9bf-4b5c-86a1-376f60951d29.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'e77d89fe-f9bf-4b5c-86a1-376f60951d29.jpg')">
@@ -684,13 +672,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 10. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 10. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="e7c51a58-98b9-4d3a-b737-33710a4969ff.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'e7c51a58-98b9-4d3a-b737-33710a4969ff.jpg')">
@@ -701,13 +689,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 11. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 11. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="0ad8afae-d02b-4d44-ac31-8d8e4d6ef376.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '0ad8afae-d02b-4d44-ac31-8d8e4d6ef376.jpg')">
@@ -718,13 +706,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 12. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 12. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="15bee449-b893-48fb-bac5-525e71771dc6.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '15bee449-b893-48fb-bac5-525e71771dc6.jpg')">
@@ -735,13 +723,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 13. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 13. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="7c4033d0-2430-4c39-a534-3fff1d2ff1c1.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '7c4033d0-2430-4c39-a534-3fff1d2ff1c1.jpg')">
@@ -752,13 +740,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 14. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 14. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="90326447-773e-4286-8b1f-ee9377b9e2e1.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '90326447-773e-4286-8b1f-ee9377b9e2e1.jpg')">
@@ -769,13 +757,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 15. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 15. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="92d8f0ec-69b4-4e00-b491-9c223f6e10d5.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '92d8f0ec-69b4-4e00-b491-9c223f6e10d5.jpg')">
@@ -786,13 +774,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 16. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 16. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="b0c523c4-6d2a-4aff-8c79-d8fd7494e915.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'b0c523c4-6d2a-4aff-8c79-d8fd7494e915.jpg')">
@@ -803,13 +791,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 17. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 17. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="b44d3222-690b-4f69-ad24-04933090bb70.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'b44d3222-690b-4f69-ad24-04933090bb70.jpg')">
@@ -820,13 +808,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 18. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 18. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="df1307a2-c4be-493d-a11b-78a35f74184b.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'df1307a2-c4be-493d-a11b-78a35f74184b.jpg')">
@@ -837,17 +825,16 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 19. Bonus Featured Item (Added by AI/Curated) -->
+            <!-- 19. Signature Collection Pearl Necklace (R450) -->
             <div class="product-card">
                 <div class="image-container">
-                    <!-- Using a stable Unsplash luxury jewellery photo that will always load instantly -->
-                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Signature Diamond Ring & Band" class="product-image" loading="lazy">
+                    <img src="signature-pearl.jpeg" alt="Signature Collection Pearl Necklace" class="product-image" loading="lazy" onerror="handleImageError(this, 'signature-pearl.jpg')">
                 </div>
                 <div class="product-info">
                     <div class="product-details">
@@ -855,8 +842,8 @@
                         <div class="product-price">R450</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Signature Diamond Ring & Band', 450)">Add to Slip</button>
-                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Signature%20Diamond%20Ring%20%26%20Band%20priced%20at%20R450" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Signature Collection Pearl Necklace', 450)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Signature%20Collection%20Pearl%20Necklace%20priced%20at%20R450" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -864,19 +851,19 @@
         </div>
     </main>
 
-    <!-- Floating Slip Bar -->
+    <!-- Floating Cart Bar -->
     <div class="cart-bar" id="cartBar">
         <div class="cart-info">
-            <span class="cart-count" id="cartCount">0 items on slip</span>
+            <span class="cart-count" id="cartCount">0 items in cart</span>
             <span class="cart-total" id="cartTotal">R0</span>
         </div>
         <div class="cart-btns">
-            <button class="cart-btn btn-clear" onclick="clearSlip()">Clear</button>
-            <button class="cart-btn btn-checkout" onclick="openReceiptModal()">View Receipt Slip</button>
+            <button class="cart-btn btn-clear" onclick="clearCart()">Clear</button>
+            <button class="cart-btn btn-checkout" onclick="openReceiptModal()">View Cart & Receipt</button>
         </div>
     </div>
 
-    <!-- Realistic Printed Receipt Modal -->
+    <!-- Receipt Modal -->
     <div class="modal-overlay" id="receiptModal">
         <div class="receipt-slip">
             <div class="receipt-header">
@@ -912,30 +899,30 @@
     </footer>
 
     <script>
-        let slipItems = [];
+        let cartItems = [];
 
-        function addToSlip(name, price) {
-            slipItems.push({ name, price });
-            updateSlipUI();
-            showToast(`Added "${name}" to your slip!`);
+        function addToCart(name, price) {
+            cartItems.push({ name, price });
+            updateCartUI();
+            showToast(`Added "${name}" to your cart!`);
         }
 
-        function clearSlip() {
-            slipItems = [];
-            updateSlipUI();
-            showToast("Slip cleared.");
+        function clearCart() {
+            cartItems = [];
+            updateCartUI();
+            showToast("Cart cleared.");
         }
 
-        function updateSlipUI() {
+        function updateCartUI() {
             const cartBar = document.getElementById('cartBar');
             const cartCount = document.getElementById('cartCount');
             const cartTotal = document.getElementById('cartTotal');
 
-            const totalAmount = slipItems.reduce((sum, item) => sum + item.price, 0);
+            const totalAmount = cartItems.reduce((sum, item) => sum + item.price, 0);
 
-            if (slipItems.length > 0) {
+            if (cartItems.length > 0) {
                 cartBar.classList.add('visible');
-                cartCount.innerText = `${slipItems.length} item${slipItems.length > 1 ? 's' : ''} on slip`;
+                cartCount.innerText = `${cartItems.length} item${cartItems.length > 1 ? 's' : ''} in cart`;
                 cartTotal.innerText = `R${totalAmount}`;
             } else {
                 cartBar.classList.remove('visible');
@@ -969,7 +956,7 @@
             container.innerHTML = '';
             let totalAmount = 0;
 
-            slipItems.forEach(item => {
+            cartItems.forEach(item => {
                 totalAmount += item.price;
                 const row = document.createElement('div');
                 row.className = 'receipt-item-row';
@@ -980,8 +967,8 @@
             receiptSubtotal.innerText = `R${totalAmount}`;
             receiptGrandTotal.innerText = `R${totalAmount}`;
 
-            let messageText = `*Emi's Elegant Jewels - Order Slip* (${receiptNumber.innerText})\n\n`;
-            slipItems.forEach(item => {
+            let messageText = `*Emi's Elegant Jewels - Cart Order* (${receiptNumber.innerText})\n\n`;
+            cartItems.forEach(item => {
                 messageText += `- 1x ${item.name}: R${item.price}\n`;
             });
             messageText += `\n*Total Due: R${totalAmount}*\n\nPlease confirm my order!`;
@@ -1209,7 +1196,7 @@
             color: #ffffff;
         }
 
-        /* Floating Cart Bar (Liquid Glass) */
+        /* Floating Cart Bar */
         .cart-bar {
             position: fixed;
             bottom: 25px;
@@ -1291,7 +1278,7 @@
             background: rgba(255,255,255,0.2);
         }
 
-        /* Real Receipt / Invoice Slip Style Modal */
+        /* Modal / Cart View */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -1331,17 +1318,6 @@
 
         .modal-overlay.active .receipt-slip {
             transform: scale(1);
-        }
-
-        .receipt-slip::after {
-            content: "";
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            right: 0;
-            height: 10px;
-            background: radial-gradient(circle, transparent, transparent 50%, #fcfcfc 50%, #fcfcfc 100%);
-            background-size: 16px 20px;
         }
 
         .receipt-header {
@@ -1454,7 +1430,7 @@
             border: none;
         }
 
-        /* Notification Toast Confirmation */
+        /* Toast Notification */
         .toast {
             position: fixed;
             top: 25px;
@@ -1528,10 +1504,9 @@
 </head>
 <body>
 
-    <!-- Toast Notification Confirmation -->
     <div class="toast" id="toastNotification">
         <div class="toast-dot"></div>
-        <span id="toastMessage">Item added to slip successfully!</span>
+        <span id="toastMessage">Item added to cart successfully!</span>
     </div>
 
     <header>
@@ -1546,7 +1521,7 @@
         
         <div class="product-grid" id="productGrid">
 
-            <!-- 1. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 1. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="488a56bf-43b5-4cdb-82b0-42dcddd6e0c1.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="eager" onerror="handleImageError(this, '488a56bf-43b5-4cdb-82b0-42dcddd6e0c1.jpg')">
@@ -1557,13 +1532,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 2. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 2. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="701443f5-ac79-4c55-81c6-fc0c9d5017d1.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="eager" onerror="handleImageError(this, '701443f5-ac79-4c55-81c6-fc0c9d5017d1.jpg')">
@@ -1574,13 +1549,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 3. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 3. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="8ba98b9b-4709-47bb-bafa-a5c80a4b8260.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="eager" onerror="handleImageError(this, '8ba98b9b-4709-47bb-bafa-a5c80a4b8260.jpg')">
@@ -1591,13 +1566,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 4. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 4. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="8cc94825-4a05-4680-ad7f-6329f69eda13.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '8cc94825-4a05-4680-ad7f-6329f69eda13.jpg')">
@@ -1608,13 +1583,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 5. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 5. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="92050ed5-8918-483e-ac6e-2594b2a5c98f.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '92050ed5-8918-483e-ac6e-2594b2a5c98f.jpg')">
@@ -1625,13 +1600,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 6. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 6. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="9e14091b-803f-4378-87fa-d39f7c5ca4bc.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '9e14091b-803f-4378-87fa-d39f7c5ca4bc.jpg')">
@@ -1642,13 +1617,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 7. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 7. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="c08743c4-805d-4bd1-8f69-fba373f40ca0.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'c08743c4-805d-4bd1-8f69-fba373f40ca0.jpg')">
@@ -1659,13 +1634,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 8. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 8. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="e773662a-2bb7-48ee-94f8-e7080e39fd73.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'e773662a-2bb7-48ee-94f8-e7080e39fd73.jpg')">
@@ -1676,13 +1651,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 9. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 9. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="e77d89fe-f9bf-4b5c-86a1-376f60951d29.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'e77d89fe-f9bf-4b5c-86a1-376f60951d29.jpg')">
@@ -1693,13 +1668,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 10. Watch & Bracelet Set (R380) - GitHub Asset -->
+            <!-- 10. Watch & Bracelet Set (R380) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="e7c51a58-98b9-4d3a-b737-33710a4969ff.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'e7c51a58-98b9-4d3a-b737-33710a4969ff.jpg')">
@@ -1710,13 +1685,13 @@
                         <div class="product-price">R380</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Watch & Bracelet Set', 380)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 11. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 11. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="0ad8afae-d02b-4d44-ac31-8d8e4d6ef376.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '0ad8afae-d02b-4d44-ac31-8d8e4d6ef376.jpg')">
@@ -1727,13 +1702,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 12. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 12. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="15bee449-b893-48fb-bac5-525e71771dc6.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '15bee449-b893-48fb-bac5-525e71771dc6.jpg')">
@@ -1744,13 +1719,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 13. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 13. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="7c4033d0-2430-4c39-a534-3fff1d2ff1c1.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '7c4033d0-2430-4c39-a534-3fff1d2ff1c1.jpg')">
@@ -1761,13 +1736,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 14. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 14. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="90326447-773e-4286-8b1f-ee9377b9e2e1.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '90326447-773e-4286-8b1f-ee9377b9e2e1.jpg')">
@@ -1778,13 +1753,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 15. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 15. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="92d8f0ec-69b4-4e00-b491-9c223f6e10d5.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '92d8f0ec-69b4-4e00-b491-9c223f6e10d5.jpg')">
@@ -1795,13 +1770,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 16. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 16. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="b0c523c4-6d2a-4aff-8c79-d8fd7494e915.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'b0c523c4-6d2a-4aff-8c79-d8fd7494e915.jpg')">
@@ -1812,13 +1787,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 17. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 17. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="b44d3222-690b-4f69-ad24-04933090bb70.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'b44d3222-690b-4f69-ad24-04933090bb70.jpg')">
@@ -1829,13 +1804,13 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 18. Bracelet Set (R250) - GitHub Asset -->
+            <!-- 18. Bracelet Set (R250) -->
             <div class="product-card">
                 <div class="image-container">
                     <img src="df1307a2-c4be-493d-a11b-78a35f74184b.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'df1307a2-c4be-493d-a11b-78a35f74184b.jpg')">
@@ -1846,17 +1821,16 @@
                         <div class="product-price">R250</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Bracelet Set', 250)">Add to Slip</button>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
                         <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 19. Bonus Featured Item (Added by AI/Curated) -->
+            <!-- 19. Signature Collection Pearl Necklace (R450) -->
             <div class="product-card">
                 <div class="image-container">
-                    <!-- Using a stable Unsplash luxury jewellery photo that will always load instantly -->
-                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Signature Diamond Ring & Band" class="product-image" loading="lazy">
+                    <img src="signature-pearl.jpeg" alt="Signature Collection Pearl Necklace" class="product-image" loading="lazy" onerror="handleImageError(this, 'signature-pearl.jpg')">
                 </div>
                 <div class="product-info">
                     <div class="product-details">
@@ -1864,8 +1838,8 @@
                         <div class="product-price">R450</div>
                     </div>
                     <div class="card-actions">
-                        <button class="clean-btn btn-secondary" onclick="addToSlip('Signature Diamond Ring & Band', 450)">Add to Slip</button>
-                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Signature%20Diamond%20Ring%20%26%20Band%20priced%20at%20R450" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Signature Collection Pearl Necklace', 450)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Signature%20Collection%20Pearl%20Necklace%20priced%20at%20R450" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -1873,19 +1847,19 @@
         </div>
     </main>
 
-    <!-- Floating Slip Bar -->
+    <!-- Floating Cart Bar -->
     <div class="cart-bar" id="cartBar">
         <div class="cart-info">
-            <span class="cart-count" id="cartCount">0 items on slip</span>
+            <span class="cart-count" id="cartCount">0 items in cart</span>
             <span class="cart-total" id="cartTotal">R0</span>
         </div>
         <div class="cart-btns">
-            <button class="cart-btn btn-clear" onclick="clearSlip()">Clear</button>
-            <button class="cart-btn btn-checkout" onclick="openReceiptModal()">View Receipt Slip</button>
+            <button class="cart-btn btn-clear" onclick="clearCart()">Clear</button>
+            <button class="cart-btn btn-checkout" onclick="openReceiptModal()">View Cart & Receipt</button>
         </div>
     </div>
 
-    <!-- Realistic Printed Receipt Modal -->
+    <!-- Receipt Modal -->
     <div class="modal-overlay" id="receiptModal">
         <div class="receipt-slip">
             <div class="receipt-header">
@@ -1921,30 +1895,30 @@
     </footer>
 
     <script>
-        let slipItems = [];
+        let cartItems = [];
 
-        function addToSlip(name, price) {
-            slipItems.push({ name, price });
-            updateSlipUI();
-            showToast(`Added "${name}" to your slip!`);
+        function addToCart(name, price) {
+            cartItems.push({ name, price });
+            updateCartUI();
+            showToast(`Added "${name}" to your cart!`);
         }
 
-        function clearSlip() {
-            slipItems = [];
-            updateSlipUI();
-            showToast("Slip cleared.");
+        function clearCart() {
+            cartItems = [];
+            updateCartUI();
+            showToast("Cart cleared.");
         }
 
-        function updateSlipUI() {
+        function updateCartUI() {
             const cartBar = document.getElementById('cartBar');
             const cartCount = document.getElementById('cartCount');
             const cartTotal = document.getElementById('cartTotal');
 
-            const totalAmount = slipItems.reduce((sum, item) => sum + item.price, 0);
+            const totalAmount = cartItems.reduce((sum, item) => sum + item.price, 0);
 
-            if (slipItems.length > 0) {
+            if (cartItems.length > 0) {
                 cartBar.classList.add('visible');
-                cartCount.innerText = `${slipItems.length} item${slipItems.length > 1 ? 's' : ''} on slip`;
+                cartCount.innerText = `${cartItems.length} item${cartItems.length > 1 ? 's' : ''} in cart`;
                 cartTotal.innerText = `R${totalAmount}`;
             } else {
                 cartBar.classList.remove('visible');
@@ -1978,7 +1952,7 @@
             container.innerHTML = '';
             let totalAmount = 0;
 
-            slipItems.forEach(item => {
+            cartItems.forEach(item => {
                 totalAmount += item.price;
                 const row = document.createElement('div');
                 row.className = 'receipt-item-row';
@@ -1989,8 +1963,1004 @@
             receiptSubtotal.innerText = `R${totalAmount}`;
             receiptGrandTotal.innerText = `R${totalAmount}`;
 
-            let messageText = `*Emi's Elegant Jewels - Order Slip* (${receiptNumber.innerText})\n\n`;
-            slipItems.forEach(item => {
+            let messageText = `*Emi's Elegant Jewels - Cart Order* (${receiptNumber.innerText})\n\n`;
+            cartItems.forEach(item => {
+                messageText += `- 1x ${item.name}: R${item.price}\n`;
+            });
+            messageText += `\n*Total Due: R${totalAmount}*\n\nPlease confirm my order!`;
+
+            whatsappBtn.href = `https://wa.me/27731199750?text=${encodeURIComponent(messageText)}`;
+
+            modal.classList.add('active');
+        }
+
+        function closeReceiptModal() {
+            const modal = document.getElementById('receiptModal');
+            modal.classList.remove('active');
+        }
+
+        function handleImageError(imgElement, fallbackSrc) {
+            if (imgElement.src.endsWith('.jpeg')) {
+                imgElement.src = fallbackSrc;
+            } else if (!imgElement.dataset.failed) {
+                imgElement.dataset.failed = "true";
+                imgElement.style.opacity = '0.5';
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emi's Elegant Jewels - Boutique Collection</title>
+    <style>
+        :root {
+            --bg-dark: #0a0a0c;
+            --glass-card: rgba(28, 28, 35, 0.55);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-border-hover: rgba(255, 255, 255, 0.25);
+            --text-main: #ffffff;
+            --text-muted: #a0a0ab;
+            --accent-glow: rgba(212, 175, 55, 0.15);
+            --btn-bg: #ffffff;
+            --btn-text: #000000;
+            --btn-hover: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(40, 20, 50, 0.4) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(20, 30, 50, 0.4) 0%, transparent 40%);
+            color: var(--text-main);
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            position: relative;
+            background: linear-gradient(rgba(10, 10, 12, 0.6), rgba(10, 10, 12, 0.8)), url('488a56bf-43b5-4cdb-82b0-42dcddd6e0c1.jpeg') no-repeat center center/cover;
+            padding: 70px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--glass-border);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .header-content {
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            color: var(--text-main);
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+            width: 100%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin-bottom: 30px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: var(--glass-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--glass-border-hover);
+            box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4), 0 0 15px var(--accent-glow);
+        }
+
+        .image-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            background-color: #151518;
+            position: relative;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.04);
+        }
+
+        .product-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        .product-details {
+            margin-bottom: 15px;
+        }
+
+        .product-tag {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .product-price {
+            font-size: 1.3rem;
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .clean-btn {
+            display: block;
+            width: 100%;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .clean-btn:hover {
+            background-color: var(--btn-hover);
+        }
+
+        .clean-btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-main);
+            border: 1px solid var(--glass-border);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+        }
+
+        /* Floating Cart Bar */
+        .cart-bar {
+            position: fixed;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: rgba(20, 20, 26, 0.85);
+            border: 1px solid var(--glass-border-hover);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5), 0 0 20px rgba(255,255,255,0.05);
+            z-index: 1000;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            width: 90%;
+            max-width: 600px;
+            justify-content: space-between;
+        }
+
+        .cart-bar.visible {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .cart-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cart-count {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cart-total {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .cart-btns {
+            display: flex;
+            gap: 10px;
+        }
+
+        .cart-btn {
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            border: none;
+            transition: opacity 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-checkout {
+            background: #25d366;
+            color: #fff;
+        }
+
+        .btn-checkout:hover {
+            opacity: 0.9;
+        }
+
+        .btn-clear {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+
+        .btn-clear:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Modal / Cart View */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .receipt-slip {
+            background: #fcfcfc;
+            color: #111111;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 4px;
+            padding: 30px 25px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+            transform: scale(0.95);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-family: 'Courier New', Courier, monospace;
+            position: relative;
+        }
+
+        .modal-overlay.active .receipt-slip {
+            transform: scale(1);
+        }
+
+        .receipt-header {
+            text-align: center;
+            border-bottom: 2px dashed #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .receipt-header h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .receipt-header p {
+            font-size: 0.75rem;
+            color: #666;
+        }
+
+        .receipt-meta {
+            font-size: 0.8rem;
+            color: #444;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .receipt-meta div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3px;
+        }
+
+        .receipt-items {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed #ccc;
+            padding-bottom: 10px;
+        }
+
+        .receipt-item-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .receipt-totals {
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .receipt-totals div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .receipt-totals .grand-total {
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-top: 1px solid #111;
+            border-bottom: 1px solid #111;
+            padding: 6px 0;
+            margin-top: 5px;
+        }
+
+        .receipt-footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .receipt-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .receipt-actions button, .receipt-actions a {
+            flex: 1;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-close-receipt {
+            background: #eee;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+
+        .btn-close-receipt:hover {
+            background: #e2e2e2;
+        }
+
+        .btn-whatsapp-receipt {
+            background: #25d366;
+            color: #fff;
+            border: none;
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            background: rgba(22, 22, 26, 0.9);
+            border: 1px solid var(--glass-border-hover);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            z-index: 3000;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transform: translateY(-100px);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .toast-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #25d366;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #25d366;
+        }
+
+        footer {
+            background-color: #070709;
+            color: var(--text-muted);
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid var(--glass-border);
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        .footer-brand {
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+            .cart-bar {
+                padding: 12px 20px;
+                flex-direction: column;
+                gap: 12px;
+                border-radius: 20px;
+                bottom: 15px;
+            }
+            .cart-btns {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="toast" id="toastNotification">
+        <div class="toast-dot"></div>
+        <span id="toastMessage">Item added to cart successfully!</span>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h1>Emi's Elegant Jewels</h1>
+            <p>A boutique jewellery brand offering timeless pieces, classy pieces. Each item is carefully crafted to add a touch of elegance.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Exclusive Collection</h2>
+        
+        <div class="product-grid" id="productGrid">
+
+            <!-- 1. Watch & Bracelet Set (R380) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="488a56bf-43b5-4cdb-82b0-42dcddd6e0c1.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="eager" onerror="handleImageError(this, '488a56bf-43b5-4cdb-82b0-42dcddd6e0c1.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Watch & Bracelet Set</div>
+                        <div class="product-price">R380</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Watch & Bracelet Set (R380) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="701443f5-ac79-4c55-81c6-fc0c9d5017d1.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="eager" onerror="handleImageError(this, '701443f5-ac79-4c55-81c6-fc0c9d5017d1.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Watch & Bracelet Set</div>
+                        <div class="product-price">R380</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Watch & Bracelet Set (R380) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="8ba98b9b-4709-47bb-bafa-a5c80a4b8260.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="eager" onerror="handleImageError(this, '8ba98b9b-4709-47bb-bafa-a5c80a4b8260.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Watch & Bracelet Set</div>
+                        <div class="product-price">R380</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Watch & Bracelet Set (R380) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="8cc94825-4a05-4680-ad7f-6329f69eda13.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '8cc94825-4a05-4680-ad7f-6329f69eda13.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Watch & Bracelet Set</div>
+                        <div class="product-price">R380</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Watch & Bracelet Set (R380) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="92050ed5-8918-483e-ac6e-2594b2a5c98f.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '92050ed5-8918-483e-ac6e-2594b2a5c98f.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Watch & Bracelet Set</div>
+                        <div class="product-price">R380</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Watch & Bracelet Set (R380) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="9e14091b-803f-4378-87fa-d39f7c5ca4bc.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '9e14091b-803f-4378-87fa-d39f7c5ca4bc.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Watch & Bracelet Set</div>
+                        <div class="product-price">R380</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Watch & Bracelet Set (R380) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="c08743c4-805d-4bd1-8f69-fba373f40ca0.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'c08743c4-805d-4bd1-8f69-fba373f40ca0.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Watch & Bracelet Set</div>
+                        <div class="product-price">R380</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Watch & Bracelet Set (R380) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="e773662a-2bb7-48ee-94f8-e7080e39fd73.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'e773662a-2bb7-48ee-94f8-e7080e39fd73.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Watch & Bracelet Set</div>
+                        <div class="product-price">R380</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Watch & Bracelet Set (R380) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="e77d89fe-f9bf-4b5c-86a1-376f60951d29.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'e77d89fe-f9bf-4b5c-86a1-376f60951d29.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Watch & Bracelet Set</div>
+                        <div class="product-price">R380</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Watch & Bracelet Set (R380) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="e7c51a58-98b9-4d3a-b737-33710a4969ff.jpeg" alt="Watch & Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'e7c51a58-98b9-4d3a-b737-33710a4969ff.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Watch & Bracelet Set</div>
+                        <div class="product-price">R380</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Watch & Bracelet Set', 380)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Watch%20%26%20Bracelet%20Set%20priced%20at%20R380" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. Bracelet Set (R250) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="0ad8afae-d02b-4d44-ac31-8d8e4d6ef376.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '0ad8afae-d02b-4d44-ac31-8d8e4d6ef376.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Bracelet Set</div>
+                        <div class="product-price">R250</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. Bracelet Set (R250) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="15bee449-b893-48fb-bac5-525e71771dc6.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '15bee449-b893-48fb-bac5-525e71771dc6.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Bracelet Set</div>
+                        <div class="product-price">R250</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13. Bracelet Set (R250) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="7c4033d0-2430-4c39-a534-3fff1d2ff1c1.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '7c4033d0-2430-4c39-a534-3fff1d2ff1c1.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Bracelet Set</div>
+                        <div class="product-price">R250</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14. Bracelet Set (R250) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="90326447-773e-4286-8b1f-ee9377b9e2e1.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '90326447-773e-4286-8b1f-ee9377b9e2e1.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Bracelet Set</div>
+                        <div class="product-price">R250</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15. Bracelet Set (R250) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="92d8f0ec-69b4-4e00-b491-9c223f6e10d5.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, '92d8f0ec-69b4-4e00-b491-9c223f6e10d5.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Bracelet Set</div>
+                        <div class="product-price">R250</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16. Bracelet Set (R250) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="b0c523c4-6d2a-4aff-8c79-d8fd7494e915.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'b0c523c4-6d2a-4aff-8c79-d8fd7494e915.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Bracelet Set</div>
+                        <div class="product-price">R250</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 17. Bracelet Set (R250) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="b44d3222-690b-4f69-ad24-04933090bb70.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'b44d3222-690b-4f69-ad24-04933090bb70.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Bracelet Set</div>
+                        <div class="product-price">R250</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 18. Bracelet Set (R250) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="df1307a2-c4be-493d-a11b-78a35f74184b.jpeg" alt="Bracelet Set" class="product-image" loading="lazy" onerror="handleImageError(this, 'df1307a2-c4be-493d-a11b-78a35f74184b.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Bracelet Set</div>
+                        <div class="product-price">R250</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Bracelet Set', 250)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Bracelet%20Set%20priced%20at%20R250" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 19. Signature Collection Pearl Necklace (R450) -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="signature-pearl.jpeg" alt="Signature Collection Pearl Necklace" class="product-image" loading="lazy" onerror="handleImageError(this, 'signature-pearl.jpg')">
+                </div>
+                <div class="product-info">
+                    <div class="product-details">
+                        <div class="product-tag">Signature Collection (New)</div>
+                        <div class="product-price">R450</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="clean-btn btn-secondary" onclick="addToCart('Signature Collection Pearl Necklace', 450)">Add to Cart</button>
+                        <a href="https://wa.me/27731199750?text=Hi,%20I%20would%20like%20to%20order%20the%20Signature%20Collection%20Pearl%20Necklace%20priced%20at%20R450" class="clean-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Floating Cart Bar -->
+    <div class="cart-bar" id="cartBar">
+        <div class="cart-info">
+            <span class="cart-count" id="cartCount">0 items in cart</span>
+            <span class="cart-total" id="cartTotal">R0</span>
+        </div>
+        <div class="cart-btns">
+            <button class="cart-btn btn-clear" onclick="clearCart()">Clear</button>
+            <button class="cart-btn btn-checkout" onclick="openReceiptModal()">View Cart & Receipt</button>
+        </div>
+    </div>
+
+    <!-- Receipt Modal -->
+    <div class="modal-overlay" id="receiptModal">
+        <div class="receipt-slip">
+            <div class="receipt-header">
+                <h3>Emi's Elegant Jewels</h3>
+                <p>Official Purchase Receipt</p>
+            </div>
+            <div class="receipt-meta">
+                <div><span>Date:</span> <span id="receiptDate"></span></div>
+                <div><span>Receipt No:</span> <span id="receiptNumber"></span></div>
+                <div><span>Cashier:</span> <span>Emi Online POS</span></div>
+            </div>
+            <div class="receipt-items" id="receiptItemsContainer">
+                <!-- Dynamically populated items -->
+            </div>
+            <div class="receipt-totals">
+                <div><span>Subtotal:</span> <span id="receiptSubtotal">R0</span></div>
+                <div><span>Tax (0%):</span> <span>R0</span></div>
+                <div class="grand-total"><span>TOTAL:</span> <span id="receiptGrandTotal">R0</span></div>
+            </div>
+            <div class="receipt-footer">
+                <p>* Thank you for shopping with us! *</p>
+                <p>Timeless & Classy Pieces</p>
+            </div>
+            <div class="receipt-actions">
+                <button class="btn-close-receipt" onclick="closeReceiptModal()">Close</button>
+                <a href="#" id="whatsappReceiptBtn" class="btn-whatsapp-receipt" target="_blank" rel="noopener">Send via WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span class="footer-brand">Emi's Elegant Jewels</span>. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let cartItems = [];
+
+        function addToCart(name, price) {
+            cartItems.push({ name, price });
+            updateCartUI();
+            showToast(`Added "${name}" to your cart!`);
+        }
+
+        function clearCart() {
+            cartItems = [];
+            updateCartUI();
+            showToast("Cart cleared.");
+        }
+
+        function updateCartUI() {
+            const cartBar = document.getElementById('cartBar');
+            const cartCount = document.getElementById('cartCount');
+            const cartTotal = document.getElementById('cartTotal');
+
+            const totalAmount = cartItems.reduce((sum, item) => sum + item.price, 0);
+
+            if (cartItems.length > 0) {
+                cartBar.classList.add('visible');
+                cartCount.innerText = `${cartItems.length} item${cartItems.length > 1 ? 's' : ''} in cart`;
+                cartTotal.innerText = `R${totalAmount}`;
+            } else {
+                cartBar.classList.remove('visible');
+                closeReceiptModal();
+            }
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toastNotification');
+            const toastMsg = document.getElementById('toastMessage');
+            toastMsg.innerText = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        function openReceiptModal() {
+            const modal = document.getElementById('receiptModal');
+            const container = document.getElementById('receiptItemsContainer');
+            const receiptSubtotal = document.getElementById('receiptSubtotal');
+            const receiptGrandTotal = document.getElementById('receiptGrandTotal');
+            const receiptDate = document.getElementById('receiptDate');
+            const receiptNumber = document.getElementById('receiptNumber');
+            const whatsappBtn = document.getElementById('whatsappReceiptBtn');
+
+            const now = new Date();
+            receiptDate.innerText = now.toLocaleDateString() + ' ' + now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+            receiptNumber.innerText = 'EEJ-' + Math.floor(100000 + Math.random() * 900000);
+
+            container.innerHTML = '';
+            let totalAmount = 0;
+
+            cartItems.forEach(item => {
+                totalAmount += item.price;
+                const row = document.createElement('div');
+                row.className = 'receipt-item-row';
+                row.innerHTML = `<span>1x ${item.name}</span><span>R${item.price}</span>`;
+                container.appendChild(row);
+            });
+
+            receiptSubtotal.innerText = `R${totalAmount}`;
+            receiptGrandTotal.innerText = `R${totalAmount}`;
+
+            let messageText = `*Emi's Elegant Jewels - Cart Order* (${receiptNumber.innerText})\n\n`;
+            cartItems.forEach(item => {
                 messageText += `- 1x ${item.name}: R${item.price}\n`;
             });
             messageText += `\n*Total Due: R${totalAmount}*\n\nPlease confirm my order!`;
